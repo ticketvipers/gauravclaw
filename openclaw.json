@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-03-18T21:28:37.881Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-18T13:41:18.042Z",
+    "lastRunVersion": "2026.3.13",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "github-copilot:github": {
+        "provider": "github-copilot",
+        "mode": "token"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "github-copilot/claude-sonnet-4.6"
+      },
+      "models": {
+        "github-copilot/claude-sonnet-4.6": {}
+      },
+      "workspace": "/Users/aigaurav/.openclaw/workspace"
+    },
+    "list": [
+      {
+        "id": "main",
+        "identity": {
+          "name": "Amy",
+          "emoji": "🌸",
+          "avatar": "avatars/amy.png"
+        }
+      }
+    ]
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "brave",
+        "apiKey": "BSA4cHIE5UQ-Izw7f_rg2OL5zhgkRF5"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "slack": {
+      "mode": "socket",
+      "webhookPath": "/slack/events",
+      "enabled": true,
+      "botToken": "__SLACK_BOT_TOKEN_REDACTED__",
+      "appToken": "__SLACK_APP_TOKEN_REDACTED__",
+      "userTokenReadOnly": true,
+      "groupPolicy": "open",
+      "streaming": "partial",
+      "nativeStreaming": true
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "88cacc1244991a7406e2acc78792eb3f701673981aec4c31"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "remote": {
+      "token": "__OPENCLAW_REDACTED__"
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "skills": {
+    "entries": {
+      "gh-issues": {
+        "apiKey": "__GITHUB_TOKEN_REDACTED__"
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "slack": {
+        "enabled": true
+      }
+    }
+  }
+}

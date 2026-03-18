@@ -1,0 +1,27 @@
+# Ignore credentials and tokens
+credentials/
+*.token.json
+*auth-profiles.json
+*device-auth.json
+*pairing.json
+
+# Ignore logs
+logs/
+*.log
+*.jsonl
+
+# Ignore session history (may contain secrets)
+agents/*/sessions/
+
+# Ignore backups
+*.bak
+*.bak.*
+
+# Ignore workspace sub-repo (since it's a separate git repo)
+workspace/
+
+# Ignore other sensitive files
+identity/
+memory/
+subagents/
+.DS_Store
