@@ -25,3 +25,4 @@ identity/
 memory/
 subagents/
 .DS_Store
+openclaw.json
